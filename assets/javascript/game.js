@@ -21,6 +21,22 @@ function generateSecretLetter() {
     return Math.floor(Math.random() * 25) + 65;
 }
 
+function wonRound() {
+    $("#main-img").attr("src", "assets/images/woohoo.png");
+    $("#wins").addClass("bg-success");
+    $("#losses").removeClass("bg-danger");
+    audioElement.setAttribute("src", "assets/sounds/woohoo.wav");
+    audioElement.play();
+}
+
+function lostRound() {
+    $("#main-img").attr("src", "assets/images/doh.png");
+    $("#losses").addClass("bg-danger");
+    $("#wins").removeClass("bg-success");
+    audioElement.setAttribute("src", "assets/sounds/doh.wav");
+    audioElement.play();
+}
+
 function reset() {
     guessLeft = 9;
     selectedLetters = [];
@@ -68,15 +84,9 @@ $(document).keyup(function (e) {
         if (keyPressed === secretLetter) {
             wins++;
 
-            $(function () {
-                $("#main-img").attr("src", "assets/images/woohoo.png");
-                $("#wins").addClass("bg-success");
-                $("#losses").removeClass("bg-danger");
-                audioElement.setAttribute("src", "assets/sounds/woohoo.wav");
-                audioElement.play();
-            })
-
+            wonRound();
             reset();
+
         } else {
             if ((selectedLetters.indexOf(letters[keyPressed - 65])) === -1) {
                 guessLeft--;
@@ -84,14 +94,7 @@ $(document).keyup(function (e) {
                 if (guessLeft === 0) {
                     losses++;
 
-                    $(function () {
-                        $("#main-img").attr("src", "assets/images/doh.png");
-                        $("#losses").addClass("bg-danger");
-                        $("#wins").removeClass("bg-success");
-                        audioElement.setAttribute("src", "assets/sounds/doh.wav");
-                        audioElement.play();
-                    })
-
+                    lostRound();
                     reset();
                 } else {
                     clearGuesses();
