@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+
+    <!-- Bootstrap jQuery and JS  -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-md-5 mx-auto">
+                <div class="card" style="width: 25rem;">
+                    <div class="card-body">
+                        <h1 class="card-title">The Psychic Game</h1>
+                        <p class="card-text">Guess what letter I'm thinking of...</p>
+                    </div>
+                    <img class="card-img-top img-fluid" id="main-img" src="assets/images/thinking.png" alt="Card image cap">
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item" id="wins"></li>
+                        <li class="list-group-item" id="losses"></li>
+                        <li class="list-group-item" id="guess-left"></li>
+                        <li class="list-group-item">
+                            <div class="progress">
+                                <div class="progress-bar" id="guess-progress" role="progressbar"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-5 mx-auto">
+                <div class="card" id="guess-alert-card" style="width: 25rem;">
+                    <ul class="list-group list-group-flush" id="guesses">
+                        <li class="list-group-item">Your Guesses So Far:</li>
+                        <li class="list-group-item">
+                            <span id="guess-letters"></span>
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Local JS -->
+    <script src="assets/javascript/game.js"></script>
+
+</body>
+
+</html>

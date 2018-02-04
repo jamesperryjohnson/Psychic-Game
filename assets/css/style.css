@@ -1,0 +1,24 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;;
+}
+
+.card-title,
+.card-text,
+.list-group {
+    text-align: center;
+}
+
+.card-title {
+    color: #e2ae9c;
+}
+
+.card-text {
+    color: #5f69d6;
+}
+
+.card-img-top {
+    height: 300px;
+    object-fit: contain;
+}
+
