@@ -5,18 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>James Perry Johnson's Silly Psychic Game</title>
+    <meta name="robots" content="noindex,nofollow">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Bootstrap jQuery and JS  -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
         crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
 
     <!-- Local CSS -->
@@ -27,6 +31,29 @@
 
 <body>
     <div class="container">
+        <div class="row mt-4">
+            <div class="col-md-5 mx-auto">
+                <div class="card" id="guess-alert-card" style="width: 25rem;">
+                    <ul class="list-group list-group-flush" id="download">
+                        <li class="list-group-item">Click here to download submission:</li>
+                        <li class="list-group-item">
+
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary" data-toggle="modal"
+                                data-target="#downloadModal">
+                                SRE Mt Fuji - PingCloud
+                            </button>
+
+                        </li>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+
+
         <div class="row mt-5">
             <div class="col-md-5 mx-auto">
                 <div class="card" style="width: 25rem;">
@@ -34,7 +61,8 @@
                         <h1 class="card-title">The Psychic Game</h1>
                         <p class="card-text">Guess what letter I'm thinking of...</p>
                     </div>
-                    <img class="card-img-top img-fluid" id="main-img" src="assets/images/thinking.png" alt="Card image cap">
+                    <img class="card-img-top img-fluid" id="main-img" src="assets/images/thinking.png"
+                        alt="Card image cap">
                     <ul class="list-group list-group-flush">
                         <li class="list-group-item" id="wins"></li>
                         <li class="list-group-item" id="losses"></li>
@@ -58,6 +86,100 @@
                         </li>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="downloadModal" tabindex="-1" role="dialog" aria-labelledby="downloadModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="downloadModalLabel">SRE Mt Fuji - PingCloud</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <h1 id="sre-mt-fuji-interview-process-submission-pingcloud">SRE Mt Fuji Interview Process Submission
+                        - PingCloud</h1>
+                    <p>This is a take-home programming assignment that I completed as part of the Ping Identity
+                        interview
+                        process. This consists of a coding problem and a two-part DevOps problem. This package consists
+                        of the solution for
+                        the coding problem and the first part of the DevOps problem.</p>
+                    <h2 id="getting-started">Getting Started</h2>
+                    <p>These instructions will cover usage information for the Docker container.</p>
+                    <h2 id="prerequisities">Prerequisities</h2>
+                    <p>In order to run this container you&#39;ll need Docker installed.</p>
+                    <ul>
+                        <li><a href="https://docs.docker.com/windows/started">Windows</a></li>
+                        <li><a href="https://docs.docker.com/mac/started/">OS X</a></li>
+                        <li><a href="https://docs.docker.com/linux/started/">Linux</a></li>
+                    </ul>
+                    <h2 id="additional-required-tools">Additional Required Tools</h2>
+                    <ul>
+                        <li><a href="https://git-scm.com/">Git</a></li>
+                        <li><a href="https://www.python.org/downloads/release/python-370/">Python 3.7</a></li>
+                        <li><a href="https://pipenv.pypa.io/en/latest/">Pipenv</a></li>
+                    </ul>
+                    <h2 id="usage">Usage</h2>
+                    <h4 id="building-the-docker-image-for-this-project">Building the Docker image for this project</h4>
+                    <p>On your local machine, clone this repo:</p>
+                    <pre><code class="lang-shell">git clone --recursive http<span class="hljs-variable">s:</span>//github.<span class="hljs-keyword">com</span>/jamesperryjohnson/<span class="hljs-keyword">sre</span>-fuji-submission-pingcloud.git
+                <span class="hljs-keyword">cd</span> <span class="hljs-keyword">sre</span>-fuji-submission-pingcloud
+                </code></pre>
+                    <p>Then build a Docker image for your application using the following command:</p>
+                    <pre><code class="lang-shell">docker build -t <span class="hljs-keyword">my</span>-image-<span class="hljs-built_in">name</span> -f Dockerfile .
+                </code></pre>
+                    <p>where my-image-name is the name you want to give your created Docker image.</p>
+                    <h4 id="running-the-docker-image-for-this-application">Running the Docker image for this application
+                    </h4>
+                    <p>After the Docker image has been created for this application, you can run it using either of the
+                        following commands:
+                    </p>
+                    <ul>
+                        <li>
+                            <h5 id="run-the-main-project-script-from-command-line-">Run the main project script from
+                                command line:</h5>
+                            <pre><code class="lang-shell">  docker <span class="hljs-built_in">run</span> <span class="hljs-keyword">my</span>-image-<span class="hljs-built_in">name</span>
+                </code></pre>
+                        </li>
+                        <li>
+                            <h5 id="run-project-tests-from-command-line-">Run project tests from command line:</h5>
+                            <pre><code class="lang-shell">  docker <span class="hljs-built_in">run</span> <span class="hljs-keyword">my</span>-image-<span class="hljs-built_in">name</span> pytest
+                </code></pre>
+                        </li>
+                    </ul>
+                    <p>To rebuild the Docker image after changes are made, repeat the steps above.</p>
+                    <h2 id="built-with">Built With</h2>
+                    <ul>
+                        <li>Git</li>
+                        <li>Python v3.7</li>
+                        <li>Pipenv</li>
+                        <li>Docker</li>
+                        <li>Python Docker image python:3.7-slim</li>
+                    </ul>
+                    <h2 id="authors">Authors</h2>
+                    <ul>
+                        <li><strong>James Perry Johnson</strong> - <a
+                                href="https://www.linkedin.com/in/jamesperryjohnson">LinkedIn</a></li>
+                    </ul>
+                    <h2 id="acknowledgments">Acknowledgments</h2>
+                    <ul>
+                        <li><a href="https://www.pingidentity.com">Ping Identity: Identity Security for the Digital
+                                Enterprise</a></li>
+                        <li><a href="https://gist.github.com/PurpleBooth/ea518ae68a49029bae95">GitHub Gist readme
+                                template</a></li>
+                    </ul>
+
+                </div>
+                <div class="modal-footer">
+                    <a class="btn btn-danger btn-lg" role="button" download
+                        href="assets/files/sre-fuji-submission-pingcloud-main.zip">Download</a>
                 </div>
             </div>
         </div>
